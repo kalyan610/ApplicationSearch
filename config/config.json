@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "application-search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/applicationSearch/ApplicationSearchWebPart.js",
+          "manifest": "./src/webparts/applicationSearch/ApplicationSearchWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ApplicationSearchWebPartStrings": "lib/webparts/applicationSearch/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
